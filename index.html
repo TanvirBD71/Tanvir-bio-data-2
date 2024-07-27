@@ -293,7 +293,28 @@
         <ul>
 
  <li>
-            <div class="date">Jan 2023 - Present</div>
+            <div class="date">Jan 2023 -  <script>
+              /*Current date script credit: 
+                JavaScript Kit (www.javascriptkit.com)
+                Over 200+ free scripts here!
+                */
+
+              var mydate = new Date()
+              var year = mydate.getYear()
+              if (year < 1000)
+                year += 1900
+              var day = mydate.getDay()
+              var month = mydate.getMonth()
+              var daym = mydate.getDate()
+              if (daym < 10)
+                daym = "0" + daym
+              var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+                "Saturday")
+              var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August",
+                "September", "October", "November", "December")
+              document.write("<small><font color='000000' face='Arial'><b>" + dayarray[day] + ", " + daym + "  " + montharray[
+                month] + " , " + year + "</b></font></small>")
+            </script> </div>
             <div class="info">
               <p class="semi-bold">Student Nurse</p>
               <p> Works as Student Nurse at <a target="blank" style="color: #555555" href="https://www.facebook.com/SHMCHT2021"><b> Sheikh Hasina Medical College Hospital, Tangail</b></a> and <a target="blank" style="color: #555555" href="https://www.facebook.com/ght.gov.bd"><b>250 Beded General Hospital, Tangail</b></a>  </p>
@@ -301,7 +322,7 @@
           </li>
 
           <li>
-            <div class="date">2021 - Present</div>
+            <div class="date">2021 - 2023</div>
             <div class="info">
               <p class="semi-bold">Affiliation Program</p>
               <p><b>Affilate Partner</b> at <a target="blank" style="color: #555555" href="https://10minuteschool.com/"><b>Robi 10 Minute School</b></a><br><b>Affilate Code: fbg52317</b> - <b> <a target="blank" style="color: #555555" href="https://tanvirbd71.github.io/10MSCOURSE/">10MSCOURSE</a> </b></p>
